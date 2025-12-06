@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بتاع الفريسكا و الوافل</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="shortcut icon" href="٠٠-01 (1).png" type="image/x-icon">
+  <style>
+    :root {
+      --main-color: #f7bb30;
+      --hover-color: #e6a500;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    /* الهيدر */
+    .header {
+      background: linear-gradient(135deg, var(--main-color), #cd8f00);
+      color: white;
+      padding: 60px 20px 100px;
+      border-bottom-left-radius: 50% 15%;
+      border-bottom-right-radius: 50% 15%;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .header img {
+      width: 250px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .header img:hover {
+      transform: scale(1.05);
+    }
+    .header h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .header p {
+      margin: 15px auto 0;
+      max-width: 600px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* كارت المينو */
+    .menu-card {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      margin: -60px auto 40px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .menu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    .menu-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: block;
+      background: var(--main-color);
+      color: white;
+      font-size: 1rem;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: var(--hover-color);
+      transform: translateY(-2px);
+    }
+
+    /* الفوتر */
+/* الفوتر الجديد */
+.site-footer {
+  background: #222;
+  color: white;
+  padding: 60px 20px 40px;
+  text-align: center; /* خلي كل المحتوى على اليمين */
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 15%;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section h4::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--main-color);
+  margin: 5px 0 0 0; /* تحريك الخط تحت العنوان */
+  border-radius: 2px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: var(--main-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* خلي الايقونات على اليمين */
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.site-footer iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* حقوق الطبع */
+.copyright {
+  margin-top: 20px;
+  font-size: 0.7rem;
+  color: #aaa;
+  text-align: center;
+}
+
+
+    /* متجاوب */
+    @media (max-width: 768px) {
+      .header { padding: 40px 15px 80px; }
+      .header h1 { font-size: 1.6rem; }
+      .menu-card { margin: -50px auto 30px; padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <div class="header">
+    <img src="٠٠-01 (1).png" alt="">
+    <h1>الحلو بتاعنا .. علي كيفك</h1>
+  </div>
+
+  <!-- كارت المينو -->
+  <div class="menu-card">
+    <img src="منيو بتاع الفريسكا و الوافل  qr.png" alt="Menu">
+    <a href="https://drive.google.com/file/d/1uROX-Xria4cEDq8xvx4oksS01uqv2TQ1/view?usp=drive_link" class="btn" target="_blank">View Menu</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-section">
+      <h4>اتصل بنا</h4>
+      <ul>
+        <li><a href="tel:+201278871018">01278871018</a> &nbsp; <i class="fas fa-phone"></i></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>تابعنا</h4>
+      <div class="social-links">
+        <a class="fac" href="https://www.facebook.com/share/16c76GY9GD/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="in" href="https://www.instagram.com/bta3_elfresca?igsh=MThicWJsemo5a2dpOQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="ti" href="https://www.tiktok.com/@adeelbakry?_r=1&_t=ZS-91jHyK7Za0g" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a class="wa" href="https://api.whatsapp.com/send?phone=201278871018" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <h4>العصافرة بحري شارع اطلس بجوار كافية حدوتة مصرية</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.1419656015455!2d30.0023353!3d31.2721681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5d108d322c02d%3A0xf9f2346011ab364a!2z2KjYqtin2Lkg2KfZhNmB2LHZitiz2YPYpyDZiNin2YTZiNin2YHZhA!5e0!3m2!1sar!2seg!4v1764767431390!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="copyright">
+      <p>© 2025 جميع الحقوق محفوظة - <strong>بتاع الفريسكا و الوافل</strong></p>
+    </div>
+  </footer>
+
+</body>
+</html>
