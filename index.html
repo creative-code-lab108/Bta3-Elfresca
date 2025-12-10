@@ -183,6 +183,64 @@
   text-align: center;
 }
 
+/* --- طرق الدفع --- */
+.payment-methods {
+  background: white;
+  padding: 20px;
+  margin: 25px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.payment-methods:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.payment-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: var(--main-color);
+  position: relative;
+}
+
+.payment-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: var(--main-color);
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 3px;
+}
+
+.payment-methods ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-methods ul li {
+  padding: 10px;
+  margin: 8px 0;
+  background: #f3f3f3;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.payment-methods ul li:hover {
+  background: #ffe7b3;
+  color: #000;
+  transform: translateX(-5px);
+}
+
+    
 
     /* متجاوب */
     @media (max-width: 768px) {
@@ -203,17 +261,28 @@
   <!-- كارت المينو -->
   <div class="menu-card">
     <img src="منيو بتاع الفريسكا و الوافل  qr.png" alt="Menu">
-    <a href="https://drive.google.com/file/d/1uROX-Xria4cEDq8xvx4oksS01uqv2TQ1/view?usp=drive_link" class="btn" target="_blank">View Menu</a>
+    <a href="https://drive.google.com/file/d/1soDobs-SZ3uNYJj4qplZsT4JoDa2I7jU/view?usp=sharing" class="btn" target="_blank">View Menu</a>
   </div>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-section">
-      <h4>اتصل بنا</h4>
+      <h4> للتوصيل و الطلبات اتصل بنا علي </h4>
       <ul>
         <li><a href="tel:+201278871018">01278871018</a> &nbsp; <i class="fas fa-phone"></i></li>
       </ul>
     </div>
+
+<div class="payment-methods">
+  <h4 class="payment-title">طرق الدفع</h4>
+  <ul>
+    <li>دفع كاش</li>
+    <li>فودافون كاش</li>
+    <li>انستا باي</li>
+  </ul>
+</div>
+
+    
 
     <div class="footer-section">
       <h4>تابعنا</h4>
@@ -235,3 +304,4 @@
 
 </body>
 </html>
+
